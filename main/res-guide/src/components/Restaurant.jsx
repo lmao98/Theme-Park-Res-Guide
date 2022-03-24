@@ -1,9 +1,13 @@
 //map over restaurants
 
 
-const Restaurant = () => {
+const Restaurant = (props) => {
   return (
-    <div>Restaurant name here</div>
+    <div className="res-name">Restaurant name here
+      <div>
+        {props.name}
+      </div>
+    </div>
   )
 }
 

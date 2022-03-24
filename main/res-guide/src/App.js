@@ -11,32 +11,35 @@ function App() {
   const [locations, setLocations] = useState([])
 
   
-  
-
-  const getLocations = async () => {
-    const res = await axios.get('http://localhost:3001/locations')
-     setLocations(res.data)
-     console.log(locations)
+  const getRestaurants1 = async () => {
+    const res = await axios.get('http://localhost:3001/restaurants/623c98e8600a9861f45fd1d9')
+     console.log(res.data)
   }
+
+  const handleClick1 = () => {
+    console.log('clicked')
+    getRestaurants1()
+  }   
 
   const handleClick = () => {
     console.log('clicked')
-    getLocations()
+    getRestaurants()
   }   
 
   const getRestaurants = async () => {
-    const res = await axios.get('http://localhost:3001/restaurants')
+    const res = await axios.get('http://localhost:3001/restaurants/623c98e8600a9861f45fd1d8')
      console.log(res.data)
   }
   
-  getRestaurants()
+  
 
   return (
     <div className="App">
       <Header />
       <Locations
        handleClick={handleClick}
-       getLocations={getLocations}
+       getRestaurants={getRestaurants}
+       handleClick1={handleClick1}
       />
       
     </div>
