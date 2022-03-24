@@ -59,9 +59,9 @@ function App() {
        handleClick1={handleClick1}
       />
       <Sidebar rest={rest}/>
-      <Ratings 
+      {/* <Ratings 
       vibe={rest.vibe}
-      ratings={rest.ratings}/>
+      ratings={rest.ratings}/> */}
       
     </div>
   );

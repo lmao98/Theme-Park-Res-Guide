@@ -10,7 +10,10 @@ const Sidebar = (props) => {
                 { props.rest.map((restItem) => (
                     <Restaurant
                     key={ restItem.name } 
-                    name={ restItem.name }/>
+                    name={ restItem.name }
+                    vibe={ restItem.vibe }
+                    ratings={ restItem.ratings }
+                    />
                 ))}
             </ul>
         </div>
