@@ -5,7 +5,9 @@ const Restaurant = (props) => {
   return (
     <div className="res-name" placeholder="Restaurant Name">
       <div>
-        <h2>{props.name}</h2>
+        <li>
+            <h3> { props.name } </h3>
+        </li>
       </div>
     </div>
   )
