@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+  background-color: rgb(199, 221, 201);
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.header {
+  font-size: 30px;
+  background-color: rgb(194, 235, 186);
+  font-family: 'Lobster', cursive;
+  padding: 10px;
+  margin: 10px;
+
+}
+
+.locations {
+  background-color: rgb(194, 235, 186);
+  padding: 10px;
+  margin: 10px;
+}
+
+.res-name {
+  background-color: rgb(194, 235, 186);
+  padding: 10px;
+  margin: 10px;
+}
+
+.reviews {
+  background-color: rgb(238, 245, 159);
+  padding: 10px;
+  margin: 10px;
+}
