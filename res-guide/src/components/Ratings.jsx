@@ -3,7 +3,7 @@
 function Ratings() {
   return (
     <div>
-        <h3>Reviews</h3>
+        <h3 className="reviews">Reviews</h3>
     </div>
   )
 }
