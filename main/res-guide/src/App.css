@@ -27,16 +27,16 @@
 }
 
 .res-name {
-  background-color: rgb(194, 235, 186);
+  background-color: rgb(238, 245, 159);
   padding: 10px;
-  margin: 25px 10px;
+  margin: 5px 10px;
   font-family: Helvetica, sans-serif;
 }
 
 .reviews {
-  background-color: rgb(238, 245, 159);
+  background-color: rgb(194, 235, 186);
   padding: 10px;
-  margin: 25px 10px;
+  margin: 10px 10px;
   font-family: Helvetica, sans-serif;
 }
 
