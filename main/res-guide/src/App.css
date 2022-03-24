@@ -22,23 +22,26 @@
 .locations {
   background-color: rgb(194, 235, 186);
   padding: 10px;
-  margin: 10px;
+  margin: 25px 10px;
+  font-family: Helvetica, sans-serif;
 }
 
 .res-name {
   background-color: rgb(194, 235, 186);
   padding: 10px;
-  margin: 10px;
+  margin: 25px 10px;
+  font-family: Helvetica, sans-serif;
 }
 
 .reviews {
   background-color: rgb(238, 245, 159);
   padding: 10px;
-  margin: 10px;
+  margin: 25px 10px;
+  font-family: Helvetica, sans-serif;
 }
 
 .btn {
-  margin: 15px;
+  margin: 25px 15px;
   padding: 10px;
   border: 4px solid rgb(238, 245, 159);
   background-color: rgb(194, 235, 186);
