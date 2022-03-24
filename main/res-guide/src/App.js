@@ -34,7 +34,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Locations 
+      <Locations
        handleClick={handleClick}
        getLocations={getLocations}
       />
