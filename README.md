@@ -2,7 +2,7 @@
 ## **Date: 3/23/2022**
 ### **By: Abdullah Albayati, Magdealena Joseph, (Nell) Danielle Flores **
 ### *It's the theme park restaurants guide*
-#### The coustmer will be able to order food from 3 diffrent locations and they will have 2 food cuisines in each location in the park
+#### The customer will be able to order food from 3 different locations and they will have 2 food cuisines in each location in the park
 ***
 ### *Technologies*
 1. HTML, CSS, React.js
