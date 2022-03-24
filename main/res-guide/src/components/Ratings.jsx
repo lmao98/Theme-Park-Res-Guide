@@ -1,9 +1,8 @@
 
-
-function Ratings() {
+function Ratings(props) {
   return (
     <div>
-        <h3 className="reviews">Reviews:</h3>
+        <h3 className="reviews">Reviews: {props.ratings} | Vibe: {props.vibe}</h3>
     </div>
   )
 }

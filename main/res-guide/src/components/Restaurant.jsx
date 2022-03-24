@@ -3,7 +3,7 @@
 
 const Restaurant = (props) => {
   return (
-    <div className="res-name">Restaurant name here
+    <div className="res-name" placeholder="Restaurant Name">
       <div>
         {props.name}
       </div>
