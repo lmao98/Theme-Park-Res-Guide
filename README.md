@@ -3,8 +3,8 @@
 ### **By: Abdullah Albayati, Magdalena Joseph, (Nell) Danielle Flores **
 ### *Theme Park Rrestaurants Guide*
 #### The Customer can pick 2 different locations at the Theme Park and it will display restaurants available at given location. It also displays information about cuisine type and ratings. You can add your rating by clicking on selected restauramt.
-Location 1 is at the Safari Park. It also has two restaurants: "Three Amigos Tacos" and "Dairy King" Ice Cream.
-Location 2 is at Magical Kingdom. We find very fancy "Mamma Mia" Stake House thre, and a lovely "Avoir Cake?" Bakery, prefect for desserts.
+###Location 1 is at Park Entrance. We find very fancy "Mamma Mia" Stake House thre, and a lovely "Avoir Cake?" Bakery, prefect for desserts.
+###Location 2 is at the Safari Park. It also has two restaurants: "Amigos Tacos" and "Dairy King" Ice Cream.
 ***
 #### This project was creatated with the use of Trello board and ERD scheme. Link to Trello [HERE](https://trello.com/b/JKxY2x6j/theme-park-reasturn#)
 #### ERD link [HERE](https://lucid.app/lucidchart/06e13a6a-5d55-4b19-b483-b880afad822a/edit?invitationId=inv_cf4ec6a1-40fe-43a7-9f2b-85aaa4c1bb0d)
