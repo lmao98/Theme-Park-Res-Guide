@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Locations from './components/Locations';
 import axios from 'axios'
 import { useState } from 'react'
+import RestaurantList from './components/RestaurantList';
 
 
 function App() {
@@ -16,6 +17,13 @@ function App() {
      console.log(res.data)
      setRestaurant(res.data)
   }
+
+
+  const handleClick = () => {
+    console.log('clicked')
+    getRestaurants()
+  }   
+  
 
   const handleClick1 = () => {
     console.log('clicked')
@@ -38,12 +46,12 @@ function App() {
     <div className="App">
       <Header />
       <Locations
-       handleClick={handleClick}
        getRestaurants={getRestaurants}
+       handleClick={handleClick}
        handleClick1={handleClick1}
        restaurant={restaurant}
       />
-      
+      <RestaurantList rest={rest}/>    
     </div>
   );
 }

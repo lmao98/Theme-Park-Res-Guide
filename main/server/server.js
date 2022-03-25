@@ -31,13 +31,30 @@ app.get('/restaurants', async (req, res) => {
     res.json(restaurants)
 })
 
-
 app.get('/restaurants/:id', async (req, res) => {
   const resId = req.params.id
   const findRes = await Restaurant.findById(resId)
   res.json(findRes)
 })
 
+app.get('/entCafe', async (req, res) => {
+  const findRestEnt = await Restaurant.find({ location_id: "623c7b03c121da1b0713a6b8" })
+  res.json(findRestEnt)
+})
+
+app.get('/safCafe', async (req, res) => {
+  const findRestSaf = await Restaurant.find({ location_id: "623c7b03c121da1b0713a6b9" })
+  res.json(findRestSaf)
+})
+
+app.post('/rating/:name/:num', async (req, res) => {
+  let nameQuery = req.params.name
+  let newRating = req.params.num
+  const updateRating = await Restaurant.findOneAndUpdate({ $text: { $search: nameQuery }}, { ratings: newRating }, { new: true })
+  console.log(updateRating)
+  res.json(updateRating)
+  
+})
 
 app.listen(PORT, () => {
   console.log(`Express server listening on port ${PORT}`)
