@@ -33,7 +33,8 @@ ul {
   display: flex;
 }
 
-h2 {
+.set-rating {
+  font-size: 30px;
   text-decoration: underline;
 }
 

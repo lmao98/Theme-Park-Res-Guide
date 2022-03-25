@@ -47,6 +47,11 @@ app.get('/safCafe', async (req, res) => {
   res.json(findRestSaf)
 })
 
+app.get('/rating/:name', async (req, res) => {
+  let nameQuery = req.params.name
+  const updateRating = await Restaurant.find({ $text: { $search: nameQuery }})
+  res.json(updateRating)
+})
 
 app.listen(PORT, () => {
   console.log(`Express server listening on port ${PORT}`)

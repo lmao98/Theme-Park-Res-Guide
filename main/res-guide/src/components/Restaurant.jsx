@@ -1,12 +1,14 @@
-//map over restaurants
+import { useState } from 'react'
 
 
 const Restaurant = (props) => {
+
+                    
   return (
     <div className="res-name" placeholder="Restaurant Name">
       <div>
         <li>
-          <h2> { props.name } </h2>
+          <button className='set-rating' onClick={props.rateRest}> { props.name } </button>
           <h3>Vibe: { props.vibe } </h3>
           <h3>Rating: { props.ratings } </h3>
         </li>
