@@ -11,25 +11,25 @@ const main = async () => {
     {
       name: 'Mamma Mia',
       vibe: 'Italian',
-      ratings: '4/5',
+      ratings: '4',
       location_id: entranceCafe[0]._id
     },
     {
         name: 'Avoir Cake?',
         vibe: 'French',
-        ratings: '5/5',
+        ratings: '5',
         location_id: entranceCafe[0]._id
       },
       {
         name: 'Amigos Tacos',
         vibe: 'Mexican',
-        ratings: '4/5',
+        ratings: '4',
         location_id: safariCafe[0]._id
       },
       {
         name: 'Dairy King',
         vibe: 'Ice Cream',
-        ratings: '3/5',
+        ratings: '3',
         location_id: safariCafe[0]._id
       },
   ]

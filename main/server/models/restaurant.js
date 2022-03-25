@@ -10,4 +10,6 @@ const Restaurant = new Schema(
   { timestamps: true }
 )
 
+Restaurant.index({'$**': 'text'})
+
 module.exports = Restaurant
