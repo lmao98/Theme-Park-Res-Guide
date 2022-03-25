@@ -10,12 +10,20 @@ import RestaurantList from './components/RestaurantList';
 function App() {
   
   
-  const [ restaurant, setRestaurant ] = useState([])
+  const [ rest, setRest] = useState([])
+  
+ 
+  const getRestaurants = async () => {
+    const res = await axios.get('http://localhost:3001/entCafe')
+    console.log(res.data)
+    setRest(res.data)
+  }
+  
   
   const getRestaurants1 = async () => {
-    const res = await axios.get('http://localhost:3001/restaurants/623c98e8e331e255b1c5ba0f')
-     console.log(res.data)
-     setRestaurant(res.data)
+    const res = await axios.get('http://localhost:3001/safCafe')
+    console.log(res.data)
+    setRest(res.data)
   }
 
 
@@ -30,16 +38,6 @@ function App() {
     getRestaurants1()
   }   
 
-  const handleClick = () => {
-    console.log('clicked')
-    getRestaurants()
-  }   
-
-  const getRestaurants = async () => {
-    const res = await axios.get('http://localhost:3001/restaurants/623c98e8e331e255b1c5ba10')
-     console.log(res.data)
-  }
-  
   
 
   return (
@@ -49,7 +47,7 @@ function App() {
        getRestaurants={getRestaurants}
        handleClick={handleClick}
        handleClick1={handleClick1}
-       restaurant={restaurant}
+    
       />
       <RestaurantList rest={rest}/>    
     </div>

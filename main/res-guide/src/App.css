@@ -34,8 +34,11 @@ ul {
 }
 
 .set-rating {
-  font-size: 30px;
+  font-size: 28px;
+  font-family: 'Lobster', cursive;
   text-decoration: underline;
+  border: none;
+  background-color: rgb(238, 245, 159);
 }
 
 .res-name {
@@ -44,8 +47,9 @@ ul {
   padding: 10px;
   margin: 5px 10px;
   font-family: Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bolder;
+  border: 6px solid rgb(194, 235, 186);
 }
 
 .reviews {
@@ -71,3 +75,7 @@ ul {
   
 }
 
+.set-rating:hover {
+  background-color: rgb(194, 235, 186);
+  box-shadow: 2px 2px 20px rgba(255, 255, 255, 0.8);
+}
