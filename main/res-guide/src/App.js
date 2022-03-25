@@ -9,10 +9,10 @@ import RestaurantList from './components/RestaurantList';
 
 function App() {
   
-  const [rest, setRest] = useState([])
-
-
-
+  
+  const [ rest, setRest] = useState([])
+  
+ 
   const getRestaurants = async () => {
     const res = await axios.get('http://localhost:3001/entCafe')
     console.log(res.data)
@@ -39,7 +39,6 @@ function App() {
   }   
 
   
-  
 
   return (
     <div className="App">
@@ -48,6 +47,7 @@ function App() {
        getRestaurants={getRestaurants}
        handleClick={handleClick}
        handleClick1={handleClick1}
+    
       />
       <RestaurantList rest={rest}/>    
     </div>

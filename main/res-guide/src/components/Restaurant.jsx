@@ -1,19 +1,17 @@
-import { useState } from 'react'
-
 
 const Restaurant = (props) => {
 
                     
   return (
-    <button className="res-name" placeholder="Restaurant Name">
+    <div className="res-name" placeholder="Restaurant Name">
       <div>
         <li>
           <button className='set-rating' onClick={props.rateRest}> { props.name } </button>
           <h3>Vibe: { props.vibe } </h3>
-          <h3>Rating: { props.ratings } </h3>
+          <h3>Stars: { props.ratings } </h3>
         </li>
       </div>
-    </button>
+    </div>
   )
 }
 
