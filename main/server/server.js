@@ -47,10 +47,12 @@ app.get('/safCafe', async (req, res) => {
   res.json(findRestSaf)
 })
 
-app.get('/rating/:name', async (req, res) => {
+app.post('/rating/:name/:num', async (req, res) => {
   let nameQuery = req.params.name
-  const updateRating = await Restaurant.find({ $text: { $search: nameQuery }})
+  let newRating = req.params.num
+  const updateRating = await Restaurant.findOneAndUpdate({ $text: { $search: nameQuery }}, { ratings: newRating }, { new: true })
   res.json(updateRating)
+  
 })
 
 app.listen(PORT, () => {
