@@ -17,7 +17,7 @@ Location 2 is at Magical Kingdom. We find very fancy "Mamma Mia" Stake House thr
 ***
 ### *Screenshots* 
 <img width="1210" alt="Screen Shot 2022-03-25 at 12 29 40 PM" src="https://user-images.githubusercontent.com/99560351/160162155-ed17f03f-c3db-49a7-86a4-786073a7ceef.png">
-***
+
 
 ### *Future features*
 ***
