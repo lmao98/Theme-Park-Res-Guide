@@ -1,10 +1,10 @@
 import Restaurant from "./Restaurant"
 
 
-const Sidebar = (props) => {
+const RestaurantList = (props) => {
 
     return (
-        <div className="right">
+        <div className="list-container">
             <h1>Restaurants</h1>
             <ul>
                 { props.rest.map((restItem) => (
@@ -20,4 +20,4 @@ const Sidebar = (props) => {
     )
 }
 
-export default Sidebar
+export default RestaurantList

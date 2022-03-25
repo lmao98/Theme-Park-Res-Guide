@@ -4,9 +4,7 @@ import Header from './components/Header';
 import Locations from './components/Locations';
 import axios from 'axios'
 import { useState } from 'react'
-import Sidebar from './components/Sidebar';
-import Restaurant from './components/Restaurant';
-import Ratings from './components/Ratings'
+import RestaurantList from './components/RestaurantList';
 
 
 function App() {
@@ -16,9 +14,6 @@ function App() {
 
 
   const getRestaurants = async () => {
-    // const res = await axios.get('http://localhost:3001/restaurants/623c7b12cd8760ede3c8fb6c')
-    // setRest(res.data)
-
     const res = await axios.get('http://localhost:3001/entCafe')
     console.log(res.data)
     setRest(res.data)
@@ -26,9 +21,6 @@ function App() {
   
   
   const getRestaurants1 = async () => {
-    // const res = await axios.get('http://localhost:3001/restaurants/623c7b12cd8760ede3c8fb6b')
-    // setRest(res.data)
-
     const res = await axios.get('http://localhost:3001/safCafe')
     console.log(res.data)
     setRest(res.data)
@@ -58,11 +50,7 @@ function App() {
        getRestaurants={getRestaurants}
        handleClick1={handleClick1}
       />
-      <Sidebar rest={rest}/>
-      {/* <Ratings 
-      vibe={rest.vibe}
-      ratings={rest.ratings}/> */}
-      
+      <RestaurantList rest={rest}/>    
     </div>
   );
 }

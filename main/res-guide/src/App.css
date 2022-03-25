@@ -28,6 +28,15 @@
   font-family: Helvetica, sans-serif;
 }
 
+ul {
+  list-style: none;
+  display: flex;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
 .res-name {
   background-color: rgb(238, 245, 159);
   width: 50%;
