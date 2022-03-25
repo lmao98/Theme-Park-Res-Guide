@@ -1,6 +1,6 @@
 
 
-const Button2 = (props) => {
+const Button1 = (props) => {
     return (
       <div>
           <button className="btn" onClick={props.handleClick1}>{props.name} </button>
@@ -8,4 +8,4 @@ const Button2 = (props) => {
     )
   }
   
-  export default Button2
+  export default Button1

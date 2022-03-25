@@ -5,7 +5,7 @@ const Restaurant = (props) => {
 
                     
   return (
-    <div className="res-name" placeholder="Restaurant Name">
+    <button className="res-name" placeholder="Restaurant Name">
       <div>
         <li>
           <button className='set-rating' onClick={props.rateRest}> { props.name } </button>
@@ -13,7 +13,7 @@ const Restaurant = (props) => {
           <h3>Rating: { props.ratings } </h3>
         </li>
       </div>
-    </div>
+    </button>
   )
 }
 

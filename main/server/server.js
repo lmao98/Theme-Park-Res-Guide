@@ -51,6 +51,7 @@ app.post('/rating/:name/:num', async (req, res) => {
   let nameQuery = req.params.name
   let newRating = req.params.num
   const updateRating = await Restaurant.findOneAndUpdate({ $text: { $search: nameQuery }}, { ratings: newRating }, { new: true })
+  console.log(updateRating)
   res.json(updateRating)
   
 })
