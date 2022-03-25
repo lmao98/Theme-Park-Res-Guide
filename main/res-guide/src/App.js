@@ -8,12 +8,13 @@ import { useState } from 'react'
 
 function App() {
   
-  const [locations, setLocations] = useState([])
-
+  
+  const [ restaurant, setRestaurant ] = useState([])
   
   const getRestaurants1 = async () => {
-    const res = await axios.get('http://localhost:3001/restaurants/623c98e8600a9861f45fd1d9')
+    const res = await axios.get('http://localhost:3001/restaurants/623c98e8e331e255b1c5ba0f')
      console.log(res.data)
+     setRestaurant(res.data)
   }
 
   const handleClick1 = () => {
@@ -27,7 +28,7 @@ function App() {
   }   
 
   const getRestaurants = async () => {
-    const res = await axios.get('http://localhost:3001/restaurants/623c98e8600a9861f45fd1d8')
+    const res = await axios.get('http://localhost:3001/restaurants/623c98e8e331e255b1c5ba10')
      console.log(res.data)
   }
   
@@ -40,6 +41,7 @@ function App() {
        handleClick={handleClick}
        getRestaurants={getRestaurants}
        handleClick1={handleClick1}
+       restaurant={restaurant}
       />
       
     </div>

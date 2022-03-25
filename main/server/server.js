@@ -30,6 +30,8 @@ app.get('/restaurants', async (req, res) => {
     const restaurants = await Restaurant.find({})
     res.json(restaurants)
 })
+
+
 app.get('/restaurants/:id', async (req, res) => {
   const resId = req.params.id
   const findRes = await Restaurant.findById(resId)
