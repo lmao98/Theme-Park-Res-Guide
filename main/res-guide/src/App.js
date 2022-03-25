@@ -38,7 +38,9 @@ function App() {
     getRestaurants1()
   }   
 
-
+  const handleClick2 = () => {
+    console.log('clicked')
+  }
   
   
 
@@ -46,9 +48,10 @@ function App() {
     <div className="App">
       <Header />
       <Locations
-       handleClick={handleClick}
        getRestaurants={getRestaurants}
+       handleClick={handleClick}
        handleClick1={handleClick1}
+       handleClick2={handleClick2}
       />
       <RestaurantList rest={rest}/>    
     </div>

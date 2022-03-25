@@ -3,7 +3,7 @@
 const Button2 = (props) => {
     return (
       <div>
-          <button className="btn" onClick={props.handleClick1}>{props.name} </button>
+          <button className="btn" onClick={props.handleClick2}>{props.name} </button>
       </div>
     )
   }
